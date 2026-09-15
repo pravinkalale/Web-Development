@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Withdrawal</title>
+</head>
+<body>
+    <script>
+        let balance = 5000;
+        let withdrawal = 3000;
+
+        if( withdrawal <= 0)
+        {
+            document.write("Invalid amount");
+        }
+        else if(withdrawal >balance )
+        {
+            document.write("Insufficient balance");
+        }
+        else
+        {
+            let remainingBalance = balance - withdrawal;
+
+
+            document.write("Withdrawal successful<br>");
+            document.write("Remaining balance: " + remainingBalance);
+        }
+    </script>
+
+</body>
+</html>
