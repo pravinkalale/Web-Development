@@ -3,16 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Looping statement</title>
+    <title>Loops</title>
 </head>
-<body>
-    <script>
-        <!--For loop-->
 
-        for(let i = 1; i <= 5; i++)
-        {
-            document.write("Hello<br>");
-        }
-    </script>
+<body>
+
+<script>
+
+    // FOR LOOP
+    document.write("<h3>For Loop</h3>");
+
+    for(let i = 1; i <= 5; i++)
+    {
+        document.write(i + "<br>");
+    }
+
+
+    // WHILE LOOP
+    document.write("<h3>While Loop</h3>");
+
+    let j = 1;
+
+    while(j <= 5)
+    {
+        document.write(j + "<br>");
+        j++;
+    }
+
+
+    // DO-WHILE LOOP
+    document.write("<h3>Do While Loop</h3>");
+
+    let k = 1;
+
+    do
+    {
+        document.write(k + "<br>");
+        k++;
+    }
+    while(k <= 5);
+
+</script>
+
 </body>
 </html>
