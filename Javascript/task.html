@@ -6,6 +6,8 @@
     <title>Practice</title>
 </head>
 <body>
+    <!--for loop-->
+
     <script>
         for(let i=1; i<=10; i++)
         {
@@ -45,6 +47,90 @@
         {
             document.write("cube of " + k + "=" + (k*k*k) + "<br>");
         }
+    </script>
+
+    <!--while loop -->
+
+    <script>
+
+        document.write("<h2> While loop </h2> ")
+
+        let i = 1;
+
+        while(i<=10)
+        {
+            document.write(i + "<br>");
+            i++;
+        }
+
+        document.write("<h2> Even Numbers </h2> ")
+
+        let p = 1;
+
+        while(p<=20)
+        {
+            if(p % 2 === 0)
+            {
+                document.write( p + "<br>");
+            
+            }
+            p++;
+        }
+
+        document.write("<h2> ODD Numbers </h2> ")
+
+        let m = 1;
+
+        while(m<=20)
+        {
+            if(m % 2 !== 0)
+            {
+                document.write( m + "<br>");
+            }
+            m++;
+        }
+
+        document.write("<h2> Break statement </h2> ")
+
+        let b = 1;
+
+        while(b<=20)
+        {
+            if(b == 7)
+            { 
+                break;
+            }
+            document.write(b +"<br>");
+            b++;
+        }
+
+        document.write("<h2> continue statement </h2> ")
+
+        let c = 1;
+
+        while(c<=10)
+        {
+            if(c == 5)
+            { 
+                c++;
+                 continue; 
+                
+            }
+            document.write(c +"<br>"); 
+            c++;
+            
+        }
+
+        document.write("<h2> print reverse numbers </h2> ");
+
+        let d=10;
+        
+        while(d>=1)
+        {
+            document.write(d + "<br>");
+            d--;
+        }
+
     </script>
 </body>
 </html>
