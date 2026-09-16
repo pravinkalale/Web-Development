@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <button onclick="show()">Click Me</button>
+
+    <script>
+        function show()
+        {
+            alert("Hello Pravin!")
+        }
+        show();
+    </script>
+
+    <input type="button" onclick="apsara()" value="Return Function">
+
+    <script type="text/javascript">
+        function concatenate(first, last)
+        {
+            var fullname;
+            fullname = first + last;
+            return fullname;
+        }
+
+        function apsara()
+        {
+            var result;
+           
+            result = concatenate('pra','vin');
+            document.write(result);
+        }
+
+    </script>
+</body>
+</html>
