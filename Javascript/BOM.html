@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="button" onclick="clickme()" value="Alert">
+
+    <script type="text/javascript">
+
+        function clickme()
+        {
+            window.alert("I am alert");
+        }
+        
+    </script> -->
+
+    <input type="button" onclick="clickme()" value="Confirm Alert">
+
+    <script type="text/javascript">
+
+        function clickme(){
+            var v= confirm("Do you want to delete ?");
+            if(v==true)
+            {
+                alert("ok");
+            }    
+            else
+            {
+                alert("cancel");
+            }
+            }
+        
+    </script>
+
+    <input type="button" onclick="show()" value="promt Alert">
+
+    <script type="text/javascript">
+
+        function show()
+        {
+            var name= prompt("What is your name?");
+                alert("My Name is"+name);
+        }
+
+    </script>
+
+    
+</body>
+</html>
