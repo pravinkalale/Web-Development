@@ -6,6 +6,9 @@
     <title>DOM</title>
 </head>
 <body>
+    <input type="text" id="number"/>
+    <input type="button" value="submit" onclick="show()"/>
+    
     <h1 id="heading">Hello World</h1>
 
     <button type="button" onclick="changeText()">Change</button>
@@ -14,6 +17,12 @@
         function changeText()
         {
             document.getElementById("heading").innerHTML = "Welcome Pravin";
+        }
+
+        function show()
+        {
+            var num = document.getElementById("number").value;
+            alert(num);
         }
     </script>
 </body>
