@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <form name="myform">
+        <input type="text" name="firstname"/>
+        <button type="button" onclick="validation()">DOM</button>
+    </form>
+
+    <script type="text/javascript">
+        function validation()
+        {
+            var fname = document.myform.firstname.value;
+            alert("My name is: "+ fname);
+        }
+    </script>
+</body>
+</html>
