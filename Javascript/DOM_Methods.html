@@ -6,6 +6,8 @@
     <title>DOM</title>
 </head>
 <body>
+    
+    <h2>GetElementById</h2>
     <input type="text" id="number"/>
     <input type="button" value="submit" onclick="show()"/>
     
@@ -24,6 +26,22 @@
             var num = document.getElementById("number").value;
             alert(num);
         }
+
+        document.write("<h2> GetElementsByName</h2>")
+
+        function pk()
+        {
+            var x=document.getElementsByName("abc");
+            alert("Total elements are:"+x.length);
+        }
     </script>
+
+    
+    <h4 name="abc">I</h4>
+    <h4 name="abc">Am</h4>
+    <h4 name="abc">Javascript</h4>
+
+    <input type="button" value="submit" onclick="pk()">
+
 </body>
 </html>
